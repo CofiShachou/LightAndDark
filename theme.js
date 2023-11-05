@@ -5,7 +5,7 @@ document.body.addEventListener('keydown',(dug)=>{
     if(dug.key== 'Enter')
     {
         ent();
-        console.log("BLEE");
+        // console.log("BLEE");
     }
 })
 
@@ -68,72 +68,48 @@ let d10=document.getElementById("d10");
 
 let nizd = [d1,d2,d3,d4,d5,d6,d7,d8,d9,d10];
 
-
-for (const item of niz) {
-    // console.log(item.innerHTML);
-}
-
-
-function ent(){
-    let ind=0;
-    let i1=0;
-    let i2=0;
-    let br=0;
-    pre=document.getElementById("pre").value;
-    // console.log(pre);
-
-    for(const item of niz){
-        i1++;
-        if(pre==item.innerHTML)
-        {
-            br=i1;
-            // console.log("Br je= "+br);
-            
-            for (const item of nizd) {
-                i2++
-                if(br==i2){
-                    item.style.display="block";
-                    setTimeout(()=> {
-                        item.style.opacity=1;
-                    },500);  
-                }
-                if(br!=i2){
-                    // console.log("BR: "+br);
-                    item.style.opacity=0;
-                    setTimeout(()=> {
-                        item.style.display="none";
-                    },500);   
-                }
-                
-            }
-            ind=1;
-        }  
-    }
-    if(ind == 0)
-    {
-        console.log("Ne postoji!");
+function ent() {
+    let pre = document.getElementById("pre").value.toLowerCase(); // Convert search term to lowercase for case-insensitive matching
+    if (pre == "") {
         for (const item of nizd) {
-            item.style.display="block";
-            setTimeout(()=>{
-                item.style.opacity=1;
-            },500);
-
+            item.style.display = "block";
+            item.style.opacity = 1;
+            item.style.cssText = "outline: 0px";
+            item.style.cssText="transition-dutation:1s;"
         }
+        return
+        
     }
-    
-    
-
+    for (const item of nizd) {
+        const animeTitle = item.querySelector(".pN").innerHTML.toLowerCase(); // Get anime title and convert it to lowercase
+        if (animeTitle.includes(pre)==true) {
+            
+                item.style.display = "block";
+                setTimeout(() => {
+                    item.style.opacity = 1;
+                    item.style.cssText = "outline: 5px solid var(--boja1)";
+                }, 500);
+        } 
+        else{
+            item.style.display = "none";
+            item.style.opacity = 0;
+            
+        }
+         
+    }
+  
 }
-
 
 document.body.addEventListener("keydown",(dug)=>{
     if(dug.key== "Enter")
     {
         ent();
+        ent2();
         
     }
 })
 
 preButton.onclick=() =>{
-    ent();
+    ent()
+    ent2();
 }

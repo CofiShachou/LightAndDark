@@ -19,7 +19,7 @@
 
     /* background: linear-gradient(45deg, black 10%, red ) ; */
     width: 1920px;
-    height: 1080px;
+    height: 931px;
     position: absolute;
     z-index: -90;
 }
@@ -246,6 +246,7 @@ ul li a:hover{
     break-inside: avoid;
 }
 .sve .d1{
+    
     position: relative;
     display: block;
     /* flex: 1;     */
@@ -253,21 +254,25 @@ ul li a:hover{
     background-color: var(--boja2);
     border-radius: 10px;
     /* margin: 10px; */
-
     margin-bottom: 1em;
-
     height:fit-content;
+    align-self: stretch;
+    transition-duration: 1s;
 
-    align-self: stretch
+
+
+    outline: 0px solid var(--boja1);
     
 
     /* background-color: black; */
 }
 .sve .d1 p{
+    
     padding: 20px;
     text-align: center;
     color: var(--boja1);
     border-radius: 10px;
+
 
     /* background-color: var(--boja2); */
 }
@@ -276,15 +281,21 @@ ul li a:hover{
     font-weight: bold;
     /* ⁡⁢⁣⁣𝗟𝗝𝗨𝗕𝗜𝗠 𝗧𝗘𝗘𝗧𝗧𝗘𝗘𝗘⁡ */
     white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+
+
     
-    
+
+    /* background-color: red; */
+    /* text-decoration: underline red;
+    text-decoration-thickness: 5px; */
 }
 .pT{
     margin-top: -30px;
     font-size: 20px;
+    /* background-color: black; */
     
     
 }
-
-
 
