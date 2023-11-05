@@ -1,0 +1,290 @@
+/* css */
+*{
+    padding: 0px;
+    margin: 0.1px;
+    border: 0px;
+    outline: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+    
+}
+.bg{
+    background: linear-gradient(45deg, var(--gradient1) 10%, var(--gradient2) ) ;
+
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+
+    /* background: linear-gradient(45deg, black 10%, red ) ; */
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    z-index: -90;
+}
+.niga{
+    position: absolute;
+    top: 200%;
+}
+body{
+    --boja1: rgb(20,8,42);
+    --boja2: rgb(252,245,219);
+    --boja3: rgb(197,161,176);
+
+
+    --gradient1: rgb(212,149,143);
+
+    --gradient2: rgb(189,156,173);
+    
+    
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+    /* background: linear-gradient(150deg, black 50%, red ) ; */
+    /* margin: 2000px; */
+    
+    
+    
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    opacity: 1;
+}
+.pNesto{
+    /* width: 100px; */
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1000000;
+    color: white;
+    padding: 10px;
+}
+.nesto{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100000;
+    outline: 3px solid black;
+    padding: 5px;
+}
+
+.header{
+    position: fixed;
+    background-color: var(--boja1);
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+}
+ul{
+    display: flex;
+    /* background-color: white;  */
+    width: 800px;
+    position: relative;
+    left: 33%;
+    
+}
+ul li{
+    text-align: center;
+    /* background-color: red; */
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 14px;
+    
+}
+ul li a{
+    color: var(--boja2);
+    /* background-color: blue; */
+    padding: 14px;
+    padding-bottom: 14px;
+    padding-top: 15px;
+}
+ul li a:hover{
+    background-color: var(--boja2);
+    color: var(--boja1);
+}
+
+.logo{
+    position: relative;
+    /* background-color: white; */
+    margin-top: -14px;
+    width: 50px;
+    height: 50px;
+}
+.logo:hover{
+    transform: rotateZ(180deg);
+}
+.deco{
+    z-index: 5;
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -25px;
+    width: 300px;
+    height: 800px;
+    transform: rotateZ(180deg);
+    z-index: 100;
+}
+.deco2{
+    z-index: 5;
+    position: fixed;
+    right: 0%;
+    margin-top: -30px;
+    margin-right: -25px;
+    width: 300px;
+    height: 800px;
+    transform: rotateX(180deg);
+    z-index:100;
+}
+.latice{
+    position: absolute;
+    /* background-color: white; */
+    top: -150%;
+    left: 30%;
+    rotate: 90deg;
+    width: 500px;
+    height: 1800px;
+    transition-duration: 8s;
+    display: block;
+    z-index: 1100;
+}
+.latice2{
+    position: absolute;
+    /* background-color: white; */
+    top: -150%;
+    left: 30%;
+    rotate: 90deg;
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+    width: 500px;
+    height: 1800px;
+    transition-duration: 8s ;
+    transition-delay: 0.5s;
+    display: block;
+    z-index: 100;
+}
+
+.pre{
+    position: absolute;
+    height: 20px;
+    outline: 2px solid var(--gradient1);
+    background-color: var(--boja2);
+    padding-left: 5px;
+    color: var(--boja1);
+    border-radius: 5px;
+}
+.pre:focus{
+    background-color: var(--gradient1);
+    outline: 2px solid var(--boja2);
+    color: var(--boja2);
+    /* text-shadow: 1px 1px 10px purple; */
+    
+}
+
+.preButton{
+    color: var(--boja1);
+    margin-left: 170px;
+    border: 2px solid;
+    position: absolute;
+    background-color: var(--boja2);
+    padding: 5px; 
+    margin-top: -5px;
+    transition-duration: 0.2s;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 2px black; */
+    /* border: none; */
+    border: 2px solid var(--gradient1);
+    border-radius: 10px;
+    
+}
+.preButton:hover{
+    transform: scale(1.2);
+}
+.preButton:active{
+    transform: scale(0.99);
+    background-color: var(--boja2);
+    border: 2px solid var(--gradient1);
+    color: var(--boja1);
+}
+
+@media (max-width: 480px) {
+    .sve .d1 {
+        height:auto;
+    }
+    .sve .d1 {
+        width:100%;
+    }
+}
+
+
+.sve{
+    position: absolute;
+    width: 1320px;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: masonry;
+    align-tracks: stretch; */
+
+
+    display: column;
+    columns: 3;
+    gap: 1em;
+    
+
+    
+
+
+    top: 10%;
+    left: 15%;
+    padding: 10px;
+    /* background-color: white; */
+}
+.sve > *{
+    break-inside: avoid;
+}
+.sve .d1{
+    position: relative;
+    display: block;
+    /* flex: 1;     */
+    padding: 10px;
+    background-color: var(--boja2);
+    border-radius: 10px;
+    /* margin: 10px; */
+
+    margin-bottom: 1em;
+
+    height:fit-content;
+
+    align-self: stretch
+    
+
+    /* background-color: black; */
+}
+.sve .d1 p{
+    padding: 20px;
+    text-align: center;
+    color: var(--boja1);
+    border-radius: 10px;
+
+    /* background-color: var(--boja2); */
+}
+.pN{
+    font-size: 25px;
+    font-weight: bold;
+    /* ⁡⁢⁣⁣𝗟𝗝𝗨𝗕𝗜𝗠 𝗧𝗘𝗘𝗧𝗧𝗘𝗘𝗘⁡ */
+    white-space: nowrap;
+    
+    
+}
+.pT{
+    margin-top: -30px;
+    font-size: 20px;
+    
+    
+}
+
+
+
