@@ -91,8 +91,10 @@ function ent() {
                 }, 500);
         } 
         else{
-            item.style.display = "none";
             item.style.opacity = 0;
+            setTimeout(()=>{
+                item.style.display = "none";
+            },500);
             
         }
          
