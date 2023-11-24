@@ -10,44 +10,25 @@
     transition-duration: 0.5s;
     
 }
-.bg{
-    background: linear-gradient(45deg, var(--gradient1) 10%, var(--gradient2) ) ;
-
-    /* background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
-
-
-    /* background: linear-gradient(45deg, black 10%, red ) ; */
-    width: 1920px;
-    height: 931px;
-    position: absolute;
-    z-index: -90;
-}
-.niga{
-    position: absolute;
-    top: 200%;
-}
 body{
-    --boja1: rgb(20,8,42);
+    /* --boja1: rgb(20,8,42);
     --boja2: rgb(252,245,219);
     --boja3: rgb(197,161,176);
 
 
     --gradient1: rgb(212,149,143);
 
-    --gradient2: rgb(189,156,173);
-    
-    
-    /* background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    --gradient2: rgb(189,156,173); */
 
-    /* background: linear-gradient(150deg, black 50%, red ) ; */
-    /* margin: 2000px; */
+    --boja1: #534859;
+    --boja2: #FBF0E8;
+
+    --boja3: #FBD0D0;
+    --boja4: #F9688D;
     
-    
+    background-color: var(--boja3);
     
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     opacity: 1;
 }
 .pNesto{
@@ -72,44 +53,61 @@ body{
 .header{
     position: fixed;
     background-color: var(--boja1);
-    height: 50px;
+    height: 6%;
     width: 100%;
     z-index: 99;
 }
+.hh2{
+    margin-left: -3%;
+}
+.hh{
+    /* transition-duration: 1ms; */
+    margin-top: 1.7%;
+    text-align: center;
+    width: 17%;
+    /* font-size: 0.8vw; */
+
+    margin-right: 1%;
+    /* background-color: black; */
+}
+.hh a{
+    padding: 9%;
+    padding-bottom: 1.35em;
+    padding-top: 1em;
+    /* height: 150%; */
+
+    /* background-color: blue; */
+    
+}
 ul{
     display: flex;
-    /* background-color: white;  */
-    width: 800px;
+    width: 42%;
+    height: 100%;
     position: relative;
     left: 33%;
     
+    /* background-color: white;  */
 }
 ul li{
-    text-align: center;
+    margin-left: 5%;
+    margin-top: 1.7%;
     /* background-color: red; */
-    margin-left: 30px;
-    font-size: 20px;
-    margin-top: 14px;
-    
 }
 ul li a{
-    color: var(--boja2);
+    color: var(--boja4);
     /* background-color: blue; */
-    padding: 14px;
-    padding-bottom: 14px;
-    padding-top: 15px;
 }
 ul li a:hover{
-    background-color: var(--boja2);
+    background-color: var(--boja4);
     color: var(--boja1);
 }
 
 .logo{
     position: relative;
     /* background-color: white; */
-    margin-top: -14px;
-    width: 50px;
-    height: 50px;
+    margin-top: -25%;
+    width: 100%;
+    height: 120%;
 }
 .logo:hover{
     transform: rotateZ(180deg);
@@ -117,10 +115,10 @@ ul li a:hover{
 .deco{
     z-index: 5;
     position: fixed;
-    margin-top: -30px;
-    margin-left: -25px;
-    width: 300px;
-    height: 800px;
+    margin-top: -1.4%;
+    margin-left: -1.2%;
+    width: 15%;
+    height: 85%;
     transform: rotateZ(180deg);
     z-index: 100;
 }
@@ -128,10 +126,10 @@ ul li a:hover{
     z-index: 5;
     position: fixed;
     right: 0%;
-    margin-top: -30px;
-    margin-right: -25px;
-    width: 300px;
-    height: 800px;
+    margin-top: -1.4%;
+    margin-right: -1.2%;
+    width: 15%;
+    height: 85%;
     transform: rotateX(180deg);
     z-index:100;
 }
@@ -165,45 +163,42 @@ ul li a:hover{
 
 .pre{
     position: absolute;
-    height: 20px;
-    outline: 2px solid var(--gradient1);
-    background-color: var(--boja2);
+    height: 40%;
+    width: 20%;
+    font-size: 80%;
+    outline: 2px solid var(--boja4);
+    background-color: var(--boja1);
     padding-left: 5px;
-    color: var(--boja1);
+    color: var(--boja4);
     border-radius: 5px;
 }
 .pre:focus{
-    background-color: var(--gradient1);
-    outline: 2px solid var(--boja2);
-    color: var(--boja2);
-    /* text-shadow: 1px 1px 10px purple; */
-    
+    box-shadow: 0px 0px 20px var(--boja4);
 }
 
 .preButton{
-    color: var(--boja1);
-    margin-left: 170px;
+    color: var(--boja4);
+    margin-left: 20%;
     border: 2px solid;
     position: absolute;
-    background-color: var(--boja2);
-    padding: 5px; 
-    margin-top: -5px;
+    background-color: var(--boja1);
+    padding: 0.5%; 
+    margin-top: -0.4%;
     transition-duration: 0.2s;
     font-weight: bold;
-    /* text-shadow: 1px 1px 2px black; */
-    /* border: none; */
-    border: 2px solid var(--gradient1);
+    border: 2px solid var(--boja4);
     border-radius: 10px;
+
+    width: 7%;
+    height: 55%;
     
 }
 .preButton:hover{
     transform: scale(1.2);
+    box-shadow: 0px 0px 10px var(--boja4);
 }
 .preButton:active{
     transform: scale(0.99);
-    background-color: var(--boja2);
-    border: 2px solid var(--gradient1);
-    color: var(--boja1);
 }
 
 @media (max-width: 480px) {
@@ -218,25 +213,11 @@ ul li a:hover{
 
 .sve{
     position: absolute;
-    width: 1320px;
-
-    /* display: flex;
-    flex-wrap: wrap; */
-
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: masonry;
-    align-tracks: stretch; */
-
-
+    width: 70%;
+    min-height: 50%;
     display: column;
     columns: 3;
     gap: 1em;
-    
-
-    
-
-
     top: 10%;
     left: 15%;
     padding: 10px;
@@ -251,7 +232,7 @@ ul li a:hover{
     display: block;
     /* flex: 1;     */
     padding: 10px;
-    background-color: var(--boja2);
+    background-color: var(--boja1);
     border-radius: 10px;
     /* margin: 10px; */
     margin-bottom: 1em;
@@ -270,7 +251,7 @@ ul li a:hover{
     
     padding: 20px;
     text-align: center;
-    color: var(--boja1);
+    color: var(--boja4);
     border-radius: 10px;
 
 
@@ -286,7 +267,7 @@ ul li a:hover{
 
 
     
-
+    color: var(--boja4);
     /* background-color: red; */
     /* text-decoration: underline red;
     text-decoration-thickness: 5px; */
@@ -295,7 +276,7 @@ ul li a:hover{
     margin-top: -30px;
     font-size: 20px;
     /* background-color: black; */
-    
+    color: var(--boja4);
     
 }
 

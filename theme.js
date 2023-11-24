@@ -1,4 +1,5 @@
 // AND HERE IS SOME UNFINISHED JAVASCRIPT THAT I AM WORKING ON
+// FlexMasonry.init('.sve');
 
 document.getElementById("pre").focus();
 document.body.addEventListener('keydown',(dug)=>{
@@ -87,7 +88,7 @@ function ent() {
                 item.style.display = "block";
                 setTimeout(() => {
                     item.style.opacity = 1;
-                    item.style.cssText = "outline: 5px solid var(--boja1)";
+                    item.style.cssText = "outline: 3px solid var(--boja4)";
                 }, 500);
         } 
         else{
@@ -115,3 +116,7 @@ preButton.onclick=() =>{
     ent()
     ent2();
 }
+
+
+
+
